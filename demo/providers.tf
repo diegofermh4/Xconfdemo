@@ -13,3 +13,8 @@ provider "google-beta" {
     credentials = file("gcloud-service-key.json")
     zone        = var.zone
 }
+
+provider "azurerm" {
+    version = "~>1.44"
+    features {}
+}
