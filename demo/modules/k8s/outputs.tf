@@ -29,3 +29,7 @@ output "cluster_username" {
 output "cluster_password" {
   value = azurerm_kubernetes_cluster.default.kube_config.0.password
 }
+
+output "acr_name" {
+  value = azurerm_container_registry.acr.name
+}
