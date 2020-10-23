@@ -45,7 +45,7 @@ resource "google_cloudfunctions_function" "xconf_hello" {
   }
 
   environment_variables = {
-    DEFAULT_NAME = "XConf"
+    K8S_CLUSTER_NAME = var.cluster_name
   }
 }
 
